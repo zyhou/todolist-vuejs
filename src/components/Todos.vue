@@ -14,6 +14,9 @@
                 </li>
             </ul>
         </div>
+        <footer class="footer">
+            <span class="todo-count"><strong>{{ remaining }}</strong> tâche à faire</span>
+        </footer>
     </section>
 </template>
 
@@ -35,6 +38,11 @@ export default {
                 name: this.newTodo
             })
             this.newTodo = ''
+        }
+    },
+    computed: {
+        remaining () {
+            return this.todos.filter(todo => !todo.completed).length
         }
     }
 }
