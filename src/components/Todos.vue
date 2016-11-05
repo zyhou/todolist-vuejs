@@ -15,6 +15,7 @@
                     </div>
                 </li>
             </ul>
+            <button class="clear-completed" v-show="completed" @click.prevent="deleteCompleted">Supprimer les tâches finies</button>
         </div>
         <footer class="footer" v-show="todos.length > 0">
             <span class="todo-count"><strong>{{ remaining }}</strong> tâche à faire</span>
@@ -50,6 +51,9 @@ export default {
         },
         deleteTodo (todo) {
             this.todos = this.todos.filter(t => t !== todo)
+        },
+        deleteCompleted () {
+            this.todos = this.todos.filter(todo => !todo.completed)
         }
     },
     computed: {
@@ -74,6 +78,9 @@ export default {
                     todo.completed = value
                 })
             }
+        },
+        completed () {
+            return this.todos.filter(todo => todo.completed).length
         }
     }
 }
