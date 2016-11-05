@@ -1,13 +1,9 @@
 <template>
-    <sections class="todoapp">
+    <section class="todoapp">
         <header class="header">
             <h1>Todos</h1>
         </header>
-    </sections>
+    </section>
 </template>
 
-<script>
-export default {
-    
-}    
-</script>
+<style src="./todo.css"></style>
