@@ -8,9 +8,9 @@
 import Todos from './components/Todos'
 
 export default {
-  name: 'app',
-  components: {
-    Todos
-  }
+    name: 'app',
+    components: {
+        Todos
+    }
 }
 </script>
