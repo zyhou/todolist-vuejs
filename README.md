@@ -1,6 +1,6 @@
 # todolist-vuejs
 
-Un projet de Todo avec Vue.js
+Un projet de Todo avec Vue.js, réutilisation du css de la todolist [http://todomvc.com/](http://todomvc.com/)
 
 ![Alt text](/assets/todo.png?raw=true "Todo list")
 
@@ -22,3 +22,5 @@ npm run dev
 ```
 
 Si vous avez une question ou autre, n'hésitez pas.
+
+[Vous pouvez comparer au todolist avec l'utilisation de react.](https://github.com/zyhou/todolist-react)
